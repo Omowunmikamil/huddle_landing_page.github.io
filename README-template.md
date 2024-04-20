@@ -1,7 +1,5 @@
 # Frontend Mentor - Huddle landing page with single introductory section solution
 
-This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -16,8 +14,6 @@ This is a solution to the [Huddle landing page with single introductory section 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,19 +26,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<img src="images/readme-image.png" alt="Mockup Screenshot">
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Check out my solution](https://www.frontendmentor.io/solutions/component-article-button-and-responsive-mobile-design-DbT1zZpkW6)
+- Live Site URL: [Check out my live site](https://omowunmikamil.github.io/huddle_landing_page.github.io/)
 
 ## My process
 
@@ -51,61 +40,108 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Mobile-first workflow (Mobile Responsive)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+<a href="https://www.facebook.com/BrowserNerd"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0,0,256,256">
+  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="none" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M34.7,39.1c-3,2.1 -6.7,3.4 -10.7,3.4c-10.2,0 -18.5,-8.3 -18.5,-18.5c0,-3 0.7,-5.8 2,-8.4" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.9,8.5c2.9,-1.9 6.3,-3 10.1,-3c10.2,0 18.5,8.3 18.5,18.5c0,3.4 -0.9,6.6 -2.5,9.3" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17,29h4v13.2c1,0.2 2,0.3 3,0.3c1,0 2,-0.1 3,-0.3v-13.2h3.6c0.5,0 0.9,-0.4 1,-0.9l0.4,-3c0,-0.3 -0.1,-0.6 -0.2,-0.8c-0.2,-0.2 -0.5,-0.3 -0.8,-0.3h-4v-3.5c0,-1.1 0.9,-2 2,-2h2c0.6,0 1,-0.4 1,-1v-3.4c0,-0.5 -0.4,-1 -0.9,-1c-0.1,0 -1.5,-0.1 -3.3,-0.1c-4.4,0 -6.8,2.6 -6.8,7.4v3.6h-4c-0.6,0 -1,0.4 -1,1v3c0,0.6 0.4,1 1,1z" fill="#ffffff" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"></path></g></g>
+</svg></a>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5%;
+}
+
+.left {
+  position: relative;
+  margin-right: 3%;
+}
+
+.left img {
+  width: 750px;
+}
+
+.right {
+  position: relative;
+  bottom: 80px;
+}
+
+.right h1 {
+  color: white;
+  font: 45px 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 130%;
+}
+
+.right p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 130%;
+}
+
+.right button {
+  border: none;
+  background: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  width: 160px;
+  color: hsl(257, 40%, 49%);
+}
+
+button:hover {
+  border: 3px solid hsl(257, 40%, 49%);
+  background: hsl(300, 69%, 71%);
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 5%;
+}
+
+footer a {
+  text-decoration: none;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+/* mobile */
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("/images/bg-mobile.svg");
+        background-size: cover;
+        background-position: center;
+    }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I need to concentrate on flex grid and it uses.
+Also need to improve on Responsive designs
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Icons8](https://www.example.com) - This helped provide me with svg embedded social icons. I really liked the icon pattern and will use it going forward.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Visit my Portfolio Website](https://omowunmikamil.tech)
+- Frontend Mentor - [Omowunmi Kamiludeen](https://www.frontendmentor.io/profile/Omowunmikamil)
+- Twitter - [Browser_Nerd](https://www.twitter.com/@Browser_Nerd)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- **Frontend mentor** - for making this project available
+-  **Icons8** - for given access to free icons
