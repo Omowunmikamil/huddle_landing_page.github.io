@@ -62,7 +62,7 @@ header img {
 .right button {
     border: none;
     background: white;
-    padding: 16px 30px;
+    padding: 15px 30px;
     border-radius: 30px;
     width: 160px;
     color: hsl(257, 40%, 49%);
@@ -98,6 +98,10 @@ a:hover {
         background-position: center;
     }
 
+    header {
+        padding-top: 20px;
+    }
+
     header img {
         width: 200px;
     }
@@ -105,6 +109,7 @@ a:hover {
     #container {
         display: flex;
         flex-direction: column;
+        padding-top: 0;
     }
 
     .left img {
@@ -116,6 +121,34 @@ a:hover {
     }
 
     .right {
-        top: 30%;
+        bottom: 0;
+        top: 40px;
     }
+
+    .right h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .right p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .right button {
+        margin: 10px 23% 20px 27%;
+        width: 150px;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    a svg {
+        width: 34px;
+        height: 34px;
+        margin-top: 20px;
+    }
+
 }
